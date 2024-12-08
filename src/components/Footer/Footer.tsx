@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Input } from "postcss";
 const Footer = () => {
   return (
     <footer className="  ">

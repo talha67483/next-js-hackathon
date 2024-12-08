@@ -2,7 +2,6 @@ import Image from "next/image";
 import { IoIosArrowDown } from "react-icons/io";
 import { CiCircleAlert } from "react-icons/ci";
 import Link from "next/link";
-import NavLink from "../NavLink/NavLink";
 
 const Navbar = () => {
   return (
