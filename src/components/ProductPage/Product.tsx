@@ -4,7 +4,6 @@ import Card1 from "../Cards/Card1";
 import SaleButton from "../Buttons/SaleButton";
 import NewButton from "../Buttons/NewButton";
 import { useState } from "react";
-import { FaLess } from "react-icons/fa";
 
 const About = () => {
   const [all, setAll] = useState(false);
