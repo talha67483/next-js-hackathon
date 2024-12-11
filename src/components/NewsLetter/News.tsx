@@ -21,7 +21,7 @@ const News = () => {
           <input
             type="text"
             placeholder="Email address..."
-            className="  w-[643px] h-[32px] border-b-2 border-black bg-[#d6dade0d]  "
+            className="   w-full  sm:w-[643px] h-[32px] border-b-2 border-black bg-[#d6dade0d]  "
           />
           <button className=" w-[91px] h-[32px] border-b-2 text-[#1E2832] border-black mx-5 leading-[22px] ">
             SUBMIT
@@ -30,11 +30,11 @@ const News = () => {
       </div>
       <div className=" w-full xl:w-[1324px] min-h-[319px]  my-32 mx-auto  ">
         <h1
-          className={` md:w-[1013px] h-[59px] w-full text-[32px] text-center md:text-[50px] font-medium ${roboto.className} mx-auto   `}
+          className={` md:w-[1013px] h-[59px] w-full text-[24px]   sm:text-[32px] text-center md:text-[50px] font-medium ${roboto.className} mx-auto   `}
         >
           Follow products and discounts on Instagram
         </h1>
-        <div className=" mx-40 md:mx-0 flex items-end   mt-20   xl:space-x-6">
+        <div className="  flex   items-end   mt-20   xl:space-x-6">
           <div></div>
           <div className=" mb-4 w-[186px]  h-[186px] rounded-lg ">
             <Image
@@ -42,14 +42,14 @@ const News = () => {
               alt=" "
               width={186}
               height={186}
-            />
-          </div>
+            />{" "}
+          </div>{" "}
           <div className=" md:flex space-x-6 ml-2 mb-5  hidden   ">
             <Card3 Img="/images/card-5.svg" />
             <Card3 Img="/images/card-2.svg" />
             <Card3 Img="/images/card-1.svg" />
             <Card3 Img="/images/card-3.svg" />
-            <Card3 Img="/images/card-7.svg" />
+            <Card3 Img="/images/card-7.svg" />{" "}
           </div>
         </div>
       </div>
