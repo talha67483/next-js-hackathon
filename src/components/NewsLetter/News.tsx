@@ -36,7 +36,7 @@ const News = () => {
         </h1>
         <div className="  flex   items-end   mt-20   xl:space-x-6">
           <div></div>
-          <div className=" mb-4 w-[186px]  h-[186px] rounded-lg ">
+          <div className=" mb-4 w-[186px] mx-auto   h-[186px] rounded-lg ">
             <Image
               src={"/images/card-6.svg"}
               alt=" "

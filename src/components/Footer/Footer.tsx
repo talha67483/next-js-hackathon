@@ -48,14 +48,14 @@ const Footer = () => {
         </ul>
 
         <div className=" w-full   sm:w-[424px] h-[142px] ">
-          <h1 className="  w-[102px] mx-auto my-10 h-[15px] text-[#9A9CAA] font-medium opacity-[80%] ">
+          <h1 className="  w-[102px] mx-auto my-4  h-[15px] text-[#9A9CAA] font-medium opacity-[80%] ">
             Newsletter
           </h1>
           <div className=" flex items-center flex-col sm:flex-row    ">
             <input
               type="text"
               placeholder="Your email"
-              className=" w-[285px] h-[45px] border-[1px] border-[#E1E3E5] rounded-md my-5 px-7  "
+              className=" w-[285px] h-[45px] border-[1px] border-[#E1E3E5] rounded-md px-7  "
             />
             <button className=" w-[127px] h-[46px]  py-[14px] px-[24px] rounded-[8px] bg-[#029FAE] text-white text-center leading-[17.6px] ml-2  ">
               Subscribe
@@ -67,12 +67,12 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className=" w-full h-[75px] flex justify-between flex-col sm:flex-row items-center     ">
+      <div className=" w-full h-[75px] flex sm:justify-between flex-col sm:flex-row items-center mx-auto      ">
         <div className="   w-full sm:w-[341px] h-[21px] text-[14px] font-normal leading-[21px] text-[#9A9CAA] mt-40  sm:ml-12 xl:ml-52   ">
           @ 2021 - Blogy - Designed & Develop by{" "}
           <span className=" text-black ">Zakirsoft</span>
         </div>
-        <div className=" w-full sm:w-[227px] h-[27px sm:mr-10 xl:mr-52 mt-10  grid place-content-center ">
+        <div className=" w-full sm:w-[227px] h-[27px sm:mr-10 xl:mr-52 mt-10 py-10   ">
           <Image
             src={"/images/Group-1.svg"}
             alt="payment"
