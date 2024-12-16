@@ -38,17 +38,23 @@ const Navbar = () => {
       {/* -------------------------- */}
 
       <div className=" w-full h-[84px] bg-[#F0F2F3] flex justify-between items-center    ">
-        <div className=" ml-5   sm:ml-20 xl:ml-48  ">
-          <Image src={"images/Logo.svg"} alt="Logo" width={166} height={40} />
-        </div>
-        <div className=" mr-20 xl:m-52 md:inline-block hidden ">
-          <Image
-            src={"/images/cart-logo.svg"}
-            alt="Cart "
-            width={120}
-            height={44}
-          />
-        </div>
+        <Link href={"#"}>
+          <div className=" ml-5   sm:ml-20 xl:ml-48  ">
+            <Image src={"images/Logo.svg"} alt="Logo" width={166} height={40} />
+          </div>
+        </Link>
+
+        <Link href={"cart"}>
+          <div className=" mr-20 xl:m-52 md:inline-block hidden ">
+            <Image
+              src={"/images/cart-logo.svg"}
+              alt="Cart "
+              width={120}
+              height={44}
+            />
+          </div>
+        </Link>
+
         <div className=" mr-5 md:hidden inline-block ">
           <a href="#" className=" text-4xl  ">
             &#8801;
