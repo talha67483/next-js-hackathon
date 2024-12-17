@@ -12,7 +12,7 @@ const OurProducts = () => {
         </h1>
       </div>
       <div className=" sm:mr-10 mt-20 ">
-        <div className=" flex sm:flex-row flex-col   items-center   space-y-10 sm:space-y-0 w-full xl:w-[1321px] mt-5 sm:mx-2 space-x-5 xl:space-x-5   xl:mx-auto ">
+        <div className=" flex sm:flex-row flex-col   items-center   space-y-10 sm:space-y-0 w-full xl:w-[1321px] mt-5 sm:mx-2 space-x-5  xl:space-x-5   xl:mx-auto ">
           <div></div>
           <Card1
             Img="/images/card-1.svg"
@@ -48,7 +48,7 @@ const OurProducts = () => {
         </button>
       </div>
       <div className=" sm:mr-10  hidden md:flex   ">
-        <div className=" flex sm:flex-row flex-col   items-center   space-y-10 sm:space-y-0 w-full xl:w-[1321px] mt-5 sm:mx-2 space-x-5 xl:space-x-5   xl:mx-auto ">
+        <div className=" flex sm:flex-row flex-col   items-center   space-y-10 sm:space-y-0 w-full xl:w-[1321px] mt-5 sm:mx-2 space-x-5  xl:space-x-5   xl:mx-auto ">
           <div></div>
           <Card1
             Img="/images/card-img-1.svg"

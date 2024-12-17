@@ -15,7 +15,7 @@ const Explore = () => {
 
       <div className="md:flex sm:flex-wrap w-[55%] space-x-2 ml-5 space-y-2 h-full hidden sm:ml-8 xl:ml-10 ">
         <div></div>
-        <div className="w-[312px] h-[312px] ">
+        <div className=" w-full sm:w-[312px] h-[312px] ">
           <Image
             src="/images/01.svg"
             alt="Logo"
@@ -24,7 +24,7 @@ const Explore = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="w-[312px] h-[312px] ">
+        <div className="  w-full sm:w-[312px] h-[312px] ">
           <Image
             src="/images/20.svg"
             alt="Logo"
@@ -33,7 +33,7 @@ const Explore = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="w-[312px] h-[312px]  ">
+        <div className="  w-full sm:w-[312px] h-[312px]  ">
           <Image
             src="/images/02.svg"
             alt="Logo"
@@ -42,7 +42,7 @@ const Explore = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="w-[312px] h-[312px]">
+        <div className=" w-full sm:w-[312px] h-[312px]">
           <Image
             src="/images/card-3.svg"
             alt="Logo"
