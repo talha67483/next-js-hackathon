@@ -61,7 +61,7 @@ const Footer = () => {
               Subscribe
             </button>
           </div>
-          <p className=" w-full    sm:w-[424px] h-[46px] font-normal opacity-[60%] leading-[22px]  my-10 sm:my-0  ">
+          <p className=" w-full    sm:w-[424px] h-[46px] font-normal opacity-[60%] leading-[22px] sm:pt-4 pt-0  my-10 sm:my-0  ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
             tincidunt erat enim.
           </p>
