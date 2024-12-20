@@ -3,7 +3,7 @@ import Image from "next/image";
 const Explore = () => {
   return (
     <section className="xl:w-[1320px] xl:mx-auto xl:my-36 my-20 w-full h-[648px]  flex">
-      <div className="w-full sm:w-[45%] h-full">
+      <div className="w-full sm:w-[45%] h-full mx-4 ">
         <Image
           src="/images/item-1.svg"
           alt="card"

@@ -83,9 +83,11 @@ const Navbar = () => {
         </ul>
 
         <div className=" w-[168px] h-[15px]  space-x-2 leading-[15.4px] sm:mr-10 xl:mr-48  ">
-          <span className=" w-[57px] h-[15px] text-[#636270] text-[14px]  ">
-            Contact:
-          </span>
+          <Link href={"/contact "}>
+            <span className=" w-[57px] h-[15px] text-[#636270] text-[14px]  ">
+              Contact:
+            </span>
+          </Link>
           <span className=" w-[103px] h-[15px] text-[#272343] text-[14px]  ">
             (808) 555-0111
           </span>

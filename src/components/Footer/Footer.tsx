@@ -67,8 +67,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className=" w-full h-[75px] flex sm:justify-between flex-col sm:flex-row items-center mx-auto      ">
-        <div className="   w-full sm:w-[341px] h-[21px] text-[14px] font-normal leading-[21px] text-[#9A9CAA] mt-40  sm:ml-12 xl:ml-52   ">
+      <div className=" w-full h-[75px] flex sm:justify-between flex-col sm:flex-row items-center  mx-auto        ">
+        <div className="   w-full sm:w-[341px] h-[21px] text-[14px] font-normal leading-[21px] text-[#9A9CAA] mt-32 sm:mt-10  py-10    sm:ml-12 xl:ml-52   ">
           @ 2021 - Blogy - Designed & Develop by{" "}
           <span className=" text-black ">Zakirsoft</span>
         </div>
