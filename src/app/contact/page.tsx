@@ -12,7 +12,7 @@ const ContactPage: React.FC = () => {
     <section className=" w-full xl:w-[1440px] min-h-[1144px]   xl:mx-auto  ">
       <div className=" flex flex-col items-center mt-10 xl:mt-28  ">
         <h1
-          className={` ${popins.className} w-full text-center   sm:w-[375px] h-[54px] text-[26px] sm:text-[36px] font-semibold leading-[54px] `}
+          className={` ${popins.className} w-full text-center    sm:w-[405px] h-[54px] text-[26px] sm:text-[36px] font-semibold leading-[54px] `}
         >
           Get In Touch With Us{" "}
         </h1>
