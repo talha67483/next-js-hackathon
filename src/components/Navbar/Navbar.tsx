@@ -25,7 +25,9 @@ const Navbar = () => {
               <div></div>
               <IoIosArrowDown />{" "}
             </li>
-            <li>Faqs</li>
+            <Link href={"/faqs"}>
+              <li>Faqs</li>
+            </Link>
             <li className=" flex items-center space-x-1 ">
               <div>
                 <CiCircleAlert className=" text-xl " />

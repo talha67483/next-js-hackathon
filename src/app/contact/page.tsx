@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { MdWatchLater } from "react-icons/md";
+import Image from "next/image";
 
 const popins = Poppins({
   subsets: ["latin"],
@@ -121,6 +122,38 @@ const ContactPage: React.FC = () => {
               Submit
             </button>
           </div>
+        </div>
+      </div>
+
+      <div className=" w-full min-h-[270px] bg-[#F4F4F4]  mt-16 flex justify-center items-center ">
+        <div className=" w-full sm:w-[1188px] min-h-[70px]  items-center      flex sm:space-x-32 space-y-20 sm:space-y-0  sm:flex-row flex-col ">
+          <div></div>
+
+          <div className=" w-full sm:w-[337px] h-[70px] flex justify-center      ">
+            <Image
+              src={"/images/Frame 5.svg"}
+              alt=" Logo"
+              width={300}
+              height={200}
+            />
+          </div>
+          <div className=" w-full sm:w-[328px] h-[70px] flex justify-center  ">
+            <Image
+              src={"/images/Frame 19.svg"}
+              alt=" Logo"
+              width={300}
+              height={200}
+            />
+          </div>
+          <div className=" w-full sm:w-[259px] h-[70px]  flex justify-center    ">
+            <Image
+              src={"/images/Frame 4.svg"}
+              alt=" Logo"
+              width={300}
+              height={200}
+            />
+          </div>
+          <div></div>
         </div>
       </div>
     </section>

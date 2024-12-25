@@ -47,8 +47,8 @@ const Footer = () => {
           <li>Help</li>
         </ul>
 
-        <div className=" w-full   sm:w-[424px] h-[142px] ">
-          <h1 className="  w-[102px] mx-auto my-4  h-[15px] text-[#9A9CAA] font-medium opacity-[80%] ">
+        <div className=" w-full   sm:w-[424px] min-h-[142px] ">
+          <h1 className="  w-[102px] mx-auto sm:mx-0 my-4  h-[15px] text-[#9A9CAA] font-medium opacity-[80%] ">
             Newsletter
           </h1>
           <div className=" flex items-center flex-col sm:flex-row    ">
@@ -57,7 +57,7 @@ const Footer = () => {
               placeholder="Your email"
               className=" w-[285px] h-[45px] border-[1px] border-[#E1E3E5] rounded-md px-7  "
             />
-            <button className=" w-[127px] h-[46px]  py-[14px] px-[24px] rounded-[8px] bg-[#029FAE] text-white text-center leading-[17.6px] ml-2  ">
+            <button className=" w-[127px] h-[46px] mt-3 sm:mt-0 py-[14px] px-[24px] rounded-[8px] bg-[#029FAE] text-white text-center leading-[17.6px] ml-2  ">
               Subscribe
             </button>
           </div>
@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
       </div>
       <div className=" w-full h-[75px] flex sm:justify-between flex-col sm:flex-row items-center  mx-auto        ">
-        <div className="   w-full sm:w-[341px] h-[21px] text-[14px] font-normal leading-[21px] text-[#9A9CAA] mt-32 sm:mt-10  py-10    sm:ml-12 xl:ml-52   ">
+        <div className="   w-full sm:w-[341px] h-[21px] text-[14px] font-normal leading-[21px] text-[#9A9CAA] mt-24 sm:mt-10  py-4     sm:ml-12 xl:ml-52   ">
           @ 2021 - Blogy - Designed & Develop by{" "}
           <span className=" text-black ">Zakirsoft</span>
         </div>
