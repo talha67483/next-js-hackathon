@@ -3,7 +3,7 @@ import { GoArrowRight } from "react-icons/go";
 
 const Hero = () => {
   return (
-    <section className=" w-full min-h-[850px]  xl:w-[1321px] xl:mx-auto flex gap-32 sm:flex-row flex-col sm:justify-evenly sm:items-center ">
+    <section className=" w-full min-h-[850px]  xl:w-[1321px] xl:mx-auto bg-[#F0F2F3] flex gap-32 sm:flex-row flex-col sm:justify-evenly sm:items-center ">
       <div className="  w-full sm:w-[557px] h-[337px]    ">
         <p className=" w-[177px] h-[14px] text-[14px] font-normal  text-[#272343] sm:mx-0 sm:mt-0  mx-10 mt-3  ">
           Welcome to chairy
