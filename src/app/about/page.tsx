@@ -107,8 +107,8 @@ const page = () => {
         <div className=" w-[305px] h-[462px]     ">
           <div className=" w-[305px] h-[375px] relative  ">
             <Image
-              src={"/images/Parent-1.svg"}
-              alt="Logo"
+              src={"/images/about-1.svg"}
+              alt="Image"
               fill
               priority
               className="object-cover"
