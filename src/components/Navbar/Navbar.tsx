@@ -1,9 +1,23 @@
+"use client";
 import Image from "next/image";
 import { IoIosArrowDown } from "react-icons/io";
 import { CiCircleAlert } from "react-icons/ci";
 import Link from "next/link";
+import { useState } from "react";
+import { Poppins } from "next/font/google";
+
+const inter = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "400", "500", "600", "700"],
+});
 
 const Navbar = () => {
+  const [menue, setMenue] = useState(false);
+
+  const clickMenue = () => {
+    setMenue(!menue);
+  };
+
   return (
     <nav>
       <div className="  hidden w-full h-[45px] bg-[#272343] md:flex  justify-between   items-center  ">
@@ -57,12 +71,52 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <div className=" mr-5 md:hidden inline-block ">
+        <div
+          className=" mr-5 md:hidden inline-block  text-black"
+          onClick={clickMenue}
+        >
           <a href="#" className=" text-4xl  ">
             &#8801;
           </a>
         </div>
       </div>
+      {menue && (
+        <div className=" bg-white text-[#272343] text-[20px] ">
+          <ul
+            className={` ${inter.className} my-5 flex space-x-6 justify-center`}
+          >
+            <li>
+              <Link href={"/"} onClick={clickMenue}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href={"shop"} onClick={clickMenue}>
+                {" "}
+                Shop
+              </Link>
+            </li>
+            <li>
+              <Link href={"product"} onClick={clickMenue}>
+                {" "}
+                Product
+              </Link>
+            </li>
+            <li>
+              <Link href={"pages"} onClick={clickMenue}>
+                {" "}
+                Pages
+              </Link>
+            </li>
+            <li>
+              <Link href={"about"} onClick={clickMenue}>
+                {" "}
+                About
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
       {/* ---------------------------- */}
 
       <div className=" w-full h-[74px] sm:flex justify-between items-center border-b-[1px] border-[#E1E3E5] hidden    ">

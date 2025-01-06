@@ -2,7 +2,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="   ">
-      <div className="w-full min-h-[418px] border-y-[1px] border-[#E1E3E5] my-10   mt-28 flex items-center xl:space-x-28 sm:space-x-10 sm:flex-row flex-col   ">
+      <div className="w-full min-h-[418px] border-y-[1px]  text-[#272343] border-[#E1E3E5] my-10   mt-28 flex items-center xl:space-x-28 sm:space-x-10 sm:flex-row flex-col   ">
         <div className="  w-full sm:w-[350px] min-h-[198px]  xl:ml-72  sm:ml-20  ">
           <div className=" my-4  sm:my-0 ">
             <Image
@@ -60,7 +60,7 @@ const Footer = () => {
             <input
               type="text"
               placeholder="Your email"
-              className=" w-[285px] h-[45px] border-[1px] border-[#E1E3E5] rounded-md px-7  "
+              className=" bg-white w-[285px] h-[45px] border-[1px] border-[#E1E3E5] rounded-md px-7  "
             />
             <button className=" w-[127px] h-[46px] mt-3 sm:mt-0 py-[14px] px-[24px] rounded-[8px] hover:bg-[#50b1ba]  bg-[#029FAE] text-white text-center leading-[17.6px] ml-2  ">
               Subscribe
@@ -72,12 +72,12 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className=" w-full h-[75px] flex sm:justify-between flex-col sm:flex-row items-center  mx-auto  text-center       ">
-        <div className="   w-full sm:w-[341px] h-[21px] text-[14px] font-normal leading-[21px] text-[#9A9CAA] mt-10 sm:mt-10   py-4     sm:ml-12 xl:ml-52   ">
+      <div className=" bg-white w-full h-[155px] flex sm:justify-between flex-col sm:flex-row items-center   mx-auto  text-center       ">
+        <div className="   w-full sm:w-[341px] h-[21px] text-[14px] font-normal leading-[21px] text-[#9A9CAA] mt-10 sm:mt-24   py-4     sm:ml-12 xl:ml-52   ">
           @ 2021 - Blogy - Designed & Develop by{" "}
           <span className=" text-black ">Zakirsoft</span>
         </div>
-        <div className=" w-full sm:w-[227px] h-[27px sm:mr-10 xl:mr-52 mt-20 py-8       ">
+        <div className="  w-full sm:w-[227px] h-[27px] sm:mr-10 xl:mr-52 mt-20 py-8       ">
           <Image
             src={"/images/Group-1.svg"}
             alt="payment"
