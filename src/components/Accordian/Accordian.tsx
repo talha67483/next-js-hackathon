@@ -25,10 +25,10 @@ const faqs: Faqs[] = [
 
 const Accordian = () => {
   return (
-    <div className=" flex  flex-col sm:flex-row sm:space-x-10 sm:mt-10 ">
+    <div className=" flex  flex-col sm:flex-row sm:space-x-10 sm:mt-10   ">
       {faqs.map((val, idx) => (
-        <div className=" space-y-4 sm:space-y-5  mt-5 xl:mt-0 " key={idx}>
-          <div className=" sm:w-[580px] sm:h-[140px] xl:w-[648px] xl:h-[170px]  collapse collapse-plus bg-base-200">
+        <div className=" space-y-4 sm:space-y-5 bg  mt-5 xl:mt-0  " key={idx}>
+          <div className="  sm:w-[580px] sm:h-[140px] xl:w-[648px] xl:h-[170px]  collapse collapse-plus bg-base-200">
             <input type="radio" name="my-accordion-3" defaultChecked />
             <div className="collapse-title text-xl font-medium">{val.qus}</div>
             <div className="collapse-content">

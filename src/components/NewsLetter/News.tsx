@@ -10,7 +10,7 @@ const roboto = Roboto({
 
 const News = () => {
   return (
-    <section className=" w-full h-[754px] bg-[#1E28320D]   ">
+    <section className=" w-full h-[754px] bg-[#1E28320D] text-[#272343]   ">
       <div className="  w-full  md:w-[760px] h-[165px]  mx-auto md:py-16 py-10  ">
         <h1
           className={` md:w-[707px] h-[59px] w-full font-medium text-[30px] text-center  md:text-[50px] leading-[58.59px] md:mx-auto   capitalize ${roboto.className} `}

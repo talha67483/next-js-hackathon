@@ -81,7 +81,7 @@ const Navbar = () => {
         </div>
       </div>
       {menue && (
-        <div className=" bg-white text-[#272343] text-[20px] ">
+        <div className=" sm:hidden bg-white text-[#272343] text-[20px] ">
           <ul
             className={` ${inter.className} my-5 flex space-x-6 justify-center`}
           >

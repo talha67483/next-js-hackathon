@@ -9,7 +9,7 @@ const helvetica = Roboto({
 const Faqs = () => {
   return (
     <section
-      className=" w-full xl:w-[1320px] h-[731px]  xl:mx-auto  mt-16 xl:mt-40
+      className=" w-full xl:w-[1320px] h-[731px]  xl:mx-auto  mt-16 xl:mt-40 
     "
     >
       <div className=" w-full md:w-[771px] h-[101px]   mx-auto text-center ">

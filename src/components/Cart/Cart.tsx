@@ -5,7 +5,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 
 const Cart = () => {
   return (
-    <section className=" xl:mx-auto mt-24 w-full xl:w-[1609px] min-h-[632.89px]   flex sm:flex-row flex-col  justify-between ">
+    <section className=" text-[#272343]    xl:mx-auto mt-24 w-full xl:w-[1609px] min-h-[632.89px]   flex sm:flex-row flex-col  justify-between ">
       <div className="  w-full sm:w-[580px] h-[547.89px] xl:w-[1100px]  sm:mx-10 my-4 sm:my-10 ">
         <h1 className=" font-medium text-[22px] leading-[33px] w-[55px] h-[33px] mx-4 text-[#111111] ">
           Bag

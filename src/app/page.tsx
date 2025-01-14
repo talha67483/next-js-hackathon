@@ -7,7 +7,7 @@ import OurProducts from "@/components/OurProducts/OurProducts";
 
 const page = () => {
   return (
-    <div>
+    <div className=" text-[#272343]   ">
       <Hero />
       <Companies />
       <Product />

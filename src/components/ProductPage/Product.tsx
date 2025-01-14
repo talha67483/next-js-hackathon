@@ -9,8 +9,8 @@ const About = () => {
   const [all, setAll] = useState(false);
 
   return (
-    <div className=" w-full min-h-[461px]border-2 border-black  ">
-      <div className=" w-full h-[44px] sm:my-10 my-12  ">
+    <div className=" w-full min-h-[461px]border-2 border-black text-[#272343]  flex flex-col items-center  ">
+      <div className=" w-full h-[44px] sm:my-10 my-12   ">
         <h1 className=" w-[188px] h-[35px] text-[32px] font-semibold sm:mx-16 xl:mx-60 mx-auto    ">
           All Products
         </h1>

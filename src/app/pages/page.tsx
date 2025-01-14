@@ -5,7 +5,7 @@ import { CiShoppingCart } from "react-icons/ci";
 const page = () => {
   return (
     <>
-      <section className=" w-full min-h-screen flex justify-center sm:gap-14 sm:my-32  sm:flex-row   flex-col sm:flex-nowrap flex-wrap   ">
+      <section className=" w-full min-h-screen flex justify-center sm:gap-14 sm:my-32  sm:flex-row  text-[#272343]  flex-col sm:flex-nowrap flex-wrap   ">
         <div className=" sm:w-[675px] sm:h-[607px] w-[300px] h-[353px] mx- mt-20 sm:mt-0  mx-auto  ">
           <Image
             src={"/images/card-2.svg"}

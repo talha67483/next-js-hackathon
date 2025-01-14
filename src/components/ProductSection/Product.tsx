@@ -7,7 +7,7 @@ const Product = () => {
   return (
     <section className=" w-full min-h-[461px]  ">
       <div className=" w-full h-[44px]  ">
-        <h1 className=" w-full sm:w-[286px] h-[35px] text-[32px] mt-20  text-[#272343] font-semibold leading-[35.2px] sm:mx-10     xl:mx-80 ">
+        <h1 className=" w-full text-center  sm:w-[286px] h-[35px] text-[32px] mt-20  text-[#272343] font-semibold leading-[35.2px] sm:mx-10     xl:mx-80 ">
           Featured Products
         </h1>
       </div>

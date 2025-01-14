@@ -11,7 +11,7 @@ const Hero = () => {
         <h1 className="  w-full sm:px-0  px-10 sm:w-[557px] h-[198px] sm:text-[60px] text-[48px]  font-bold text-[#272343] leading-[66px] my-5  ">
           Best Furniture Collection for your interior.
         </h1>
-        <button className="  w-[171px] h-[52px]  py-[12px] px-[24px] bg-[#029FAE] rounded-[8px] text-[#FFFFFF] hover:bg-[#34abb6] mt-32  sm:mt-8 mx-10    ">
+        <button className="  w-[171px] h-[52px]  py-[12px] px-[24px] bg-[#029FAE] rounded-[8px] text-[#FFFFFF] hover:bg-[#34abb6] mt-20  sm:mt-8 mx-10 sm:mx-2    ">
           Shop Now <GoArrowRight className=" inline-block " />
         </button>
       </div>

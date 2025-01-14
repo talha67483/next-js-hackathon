@@ -10,7 +10,7 @@ const popins = Poppins({
 });
 const ContactPage: React.FC = () => {
   return (
-    <section className=" w-full xl:w-[1440px] min-h-[1144px]   xl:mx-auto  ">
+    <section className=" w-full xl:w-[1440px] min-h-[1144px]   xl:mx-auto text-[#272343]   ">
       <div className=" flex flex-col items-center mt-10 xl:mt-28  ">
         <h1
           className={` ${popins.className} w-full text-center    sm:w-[405px] h-[54px] text-[26px] sm:text-[36px] font-semibold leading-[54px] `}
@@ -67,17 +67,17 @@ const ContactPage: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className=" w-full sm:w-[635px] h-auto sm:h-[923px] sm:ml-4 flex flex-col items-center space-y-5 sm:space-y-10 px-4 sm:px-0">
+        <div className=" w-full sm:w-[635px] h-auto sm:h-[923px] sm:ml-4 flex flex-col items-center space-y-5  sm:space-y-10 px-4 sm:px-0">
           <div className=" w-full sm:w-[530px] h-auto sm:h-[121px] mt-8 sm:mt-24">
             <h1
-              className={` w-full sm:w-[111.25px] h-[24px] ${popins.className} font-medium leading-[24px]`}
+              className={` w-full sm:w-[111.25px]  h-[24px] ${popins.className} font-medium leading-[24px]`}
             >
               Your name
             </h1>
             <input
               type="text"
               placeholder="Abc"
-              className={` ${popins.className} w-full sm:w-[528.75px] border-[1px] border-[#9F9F9F] rounded-[10px] h-[52px] sm:h-[75px] px-4 sm:px-8 mt-2 sm:mt-5`}
+              className={` ${popins.className} w-full bg-white sm:w-[528.75px] border-[1px] border-[#9F9F9F] rounded-[10px] h-[52px] sm:h-[75px] px-4 sm:px-8 mt-2 sm:mt-5`}
             />
           </div>
           <div className=" w-full sm:w-[530px] h-auto sm:h-[121px]">
@@ -89,7 +89,7 @@ const ContactPage: React.FC = () => {
             <input
               type="text"
               placeholder="Abc@def.com"
-              className={` ${popins.className} w-full sm:w-[528.75px] border-[1px] border-[#9F9F9F] rounded-[10px] h-[52px] sm:h-[75px] px-4 sm:px-8 mt-2 sm:mt-5`}
+              className={` ${popins.className} w-full bg-white sm:w-[528.75px] border-[1px] border-[#9F9F9F] rounded-[10px] h-[52px] sm:h-[75px] px-4 sm:px-8 mt-2 sm:mt-5`}
             />
           </div>
           <div className=" w-full sm:w-[530px] h-auto sm:h-[121px]">
@@ -101,7 +101,7 @@ const ContactPage: React.FC = () => {
             <input
               type="text"
               placeholder="This is an optional"
-              className={` ${popins.className} w-full sm:w-[528.75px] border-[1px] border-[#9F9F9F] rounded-[10px] h-[52px] sm:h-[75px] px-4 sm:px-8 mt-2 sm:mt-5`}
+              className={` ${popins.className} w-full bg-white sm:w-[528.75px] border-[1px] border-[#9F9F9F] rounded-[10px] h-[52px] sm:h-[75px] px-4 sm:px-8 mt-2 sm:mt-5`}
             />
           </div>
           <div className=" w-full sm:w-[530px] h-auto sm:min-h-[121px]">
@@ -112,7 +112,7 @@ const ContactPage: React.FC = () => {
             </h1>
             <textarea
               placeholder="Hi! I&lsquo;d like to ask about"
-              className={` ${popins.className} w-full sm:w-[528.75px] border-[1px] py-8 border-[#9F9F9F] rounded-[10px] h-[85px] sm:h-[120px] px-4 sm:px-8 mt-2 sm:mt-5`}
+              className={` ${popins.className} w-full  bg-white sm:w-[528.75px] border-[1px] py-8 border-[#9F9F9F] rounded-[10px] h-[85px] sm:h-[120px] px-4 sm:px-8 mt-2 sm:mt-5`}
             />
           </div>
           <div className=" w-full flex justify-center sm:justify-start">
