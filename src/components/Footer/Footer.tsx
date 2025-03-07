@@ -1,9 +1,9 @@
 import Image from "next/image";
 const Footer = () => {
   return (
-    <footer className="   ">
-      <div className="w-full min-h-[418px] border-y-[1px]  text-[#272343] border-[#E1E3E5] my-10   mt-28 flex items-center xl:space-x-28 sm:space-x-10 sm:flex-row flex-col   ">
-        <div className="  w-full sm:w-[350px] min-h-[198px]  xl:ml-72  sm:ml-20  ">
+    <footer className="    ">
+      <div className="w-full min-h-[418px] border-y-[1px]   text-[#272343] border-[#E1E3E5] my-10   mt-28 flex items-center xl:space-x-28 sm:space-x-10 sm:flex-row flex-col justify-center    ">
+        <div className="  w-full sm:w-[350px] min-h-[198px]      ">
           <div className=" my-4  sm:my-0 ">
             <Image
               src={"/images/Logo.svg"}
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
         </div>
         <div
-          className=" flex my-10 space-x-3 sm:space-x-14 xl:space-x-24
+          className=" flex my-10 space-x-7 sm:space-x-14 xl:space-x-24
          "
         >
           <ul className=" w-[105px] min-h-[203px]    text-center space-y-2 ">

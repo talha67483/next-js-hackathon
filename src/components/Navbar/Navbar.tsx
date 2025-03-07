@@ -5,6 +5,30 @@ import { CiCircleAlert } from "react-icons/ci";
 import Link from "next/link";
 import { useState } from "react";
 import { Poppins } from "next/font/google";
+import { VscLaw } from "react-icons/vsc";
+import { usePathname } from "next/navigation";
+import { Menu } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+
+type NavType = {
+  nav: string;
+  href: string;
+};
+
+const navItem: NavType[] = [
+  { nav: "Home", href: "/" },
+  { nav: "Shop", href: "/shop" },
+  { nav: "Product", href: "/product" },
+  { nav: "Pages", href: "/pages" },
+  { nav: "About", href: "/about" },
+];
 
 const inter = Poppins({
   subsets: ["latin"],
@@ -17,6 +41,8 @@ const Navbar = () => {
   const clickMenue = () => {
     setMenue(!menue);
   };
+
+  const pathname = usePathname();
 
   return (
     <nav>
@@ -54,7 +80,7 @@ const Navbar = () => {
       {/* -------------------------- */}
 
       <div className=" w-full h-[84px] bg-[#F0F2F3] flex justify-between items-center    ">
-        <Link href={"#"}>
+        <Link href={"/"}>
           <div className=" ml-5   sm:ml-20 xl:ml-48  ">
             <Image src={"images/Logo.svg"} alt="Logo" width={166} height={40} />
           </div>
@@ -75,67 +101,83 @@ const Navbar = () => {
           className=" mr-5 md:hidden inline-block  text-black"
           onClick={clickMenue}
         >
-          <a href="#" className=" text-4xl  ">
+          {/* <a href="" className=" text-4xl  ">
             &#8801;
-          </a>
+          </a> */}
+
+          <Sheet open={menue} onOpenChange={setMenue}>
+            <SheetTrigger>
+              {" "}
+              <Menu className=" text-4xl cursor-pointer  " />
+            </SheetTrigger>
+            <SheetHeader>
+              <SheetTitle></SheetTitle>
+              <SheetContent className=" w-[270px] ">
+                <ul className={` ${inter.className}  space-y-4 mx-4    `}>
+                  {navItem.map((val, idx) => {
+                    const isActive =
+                      pathname === val.href ||
+                      (pathname.startsWith(val.href) && val.href !== "/");
+
+                    return (
+                      <li
+                        key={idx}
+                        className={`${isActive ? "text-[#007580]" : "text-[#272343]"}`}
+                        // onClick={clickMenue}
+                      >
+                        <Link href={val.href}>{val.nav}</Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </SheetContent>
+            </SheetHeader>
+          </Sheet>
         </div>
       </div>
-      {menue && (
+      {/* {menue && (
         <div className=" sm:hidden bg-white text-[#272343] text-[20px] ">
           <ul
             className={` ${inter.className} my-5 flex space-x-6 justify-center`}
           >
-            <li>
-              <Link href={"/"} onClick={clickMenue}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href={"shop"} onClick={clickMenue}>
-                {" "}
-                Shop
-              </Link>
-            </li>
-            <li>
-              <Link href={"product"} onClick={clickMenue}>
-                {" "}
-                Product
-              </Link>
-            </li>
-            <li>
-              <Link href={"pages"} onClick={clickMenue}>
-                {" "}
-                Pages
-              </Link>
-            </li>
-            <li>
-              <Link href={"about"} onClick={clickMenue}>
-                {" "}
-                About
-              </Link>
-            </li>
+            {navItem.map((val, idx) => {
+              const isActive =
+                pathname === val.href ||
+                (pathname.startsWith(val.href) && val.href !== "/");
+
+              return (
+                <li
+                  key={idx}
+                  className={`${isActive ? "text-[#007580]" : "text-[#272343]"}`}
+                  onClick={clickMenue}
+                >
+                  <Link href={val.href}>{val.nav}</Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
-      )}
+      )} */}
       {/* ---------------------------- */}
 
       <div className=" w-full h-[74px] sm:flex justify-between items-center border-b-[1px] border-[#E1E3E5] hidden    ">
         <ul className=" w-[339px] h-[15px]  text-[14px] font-medium  text-[#636270] flex space-x-7  leading-[15.4px] sm:ml-16 xl:ml-48  ">
-          <li>
-            <Link href={"/"}>Home</Link>
-          </li>
-          <li>
-            <Link href={"shop"}> Shop</Link>
-          </li>
-          <li>
-            <Link href={"product"}> Product</Link>
-          </li>
-          <li>
-            <Link href={"pages"}> Pages</Link>
-          </li>
-          <li>
-            <Link href={"about"}> About</Link>
-          </li>
+          {navItem.map((val, idx) => {
+            const isActive =
+              pathname === val.href ||
+              (pathname.startsWith(val.href) && val.href !== "/");
+
+            return (
+              <li
+                key={idx}
+                className={`${isActive ? "text-[#007580]" : "text-[#272343]"}`}
+              >
+                <Link href={val.href} onClick={clickMenue}>
+                  {val.nav}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
 
         <div className=" w-[168px] h-[15px]  space-x-2 leading-[15.4px] sm:mr-10 xl:mr-48  ">

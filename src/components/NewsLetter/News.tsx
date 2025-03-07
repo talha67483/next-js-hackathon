@@ -34,9 +34,9 @@ const News = () => {
         >
           Follow products and discounts on Instagram
         </h1>
-        <div className="  flex   items-end   mt-20   xl:space-x-6">
+        <div className="  flex  items-end   mt-20     xl:space-x-6">
           <div></div>
-          <div className=" mb-4 w-[186px] mx-auto   h-[186px] rounded-lg ">
+          <div className=" mb-4 w-[186px]  mx-auto h-[186px] rounded-lg ">
             <Image
               src={"/images/card-6.svg"}
               alt=" "
@@ -44,7 +44,7 @@ const News = () => {
               height={186}
             />{" "}
           </div>{" "}
-          <div className=" md:flex space-x-6 ml-2 mb-5  hidden   ">
+          <div className=" md:flex  space-x-6    mb-5   hidden   ">
             <Card3 Img="/images/card-5.svg" />
             <Card3 Img="/images/card-2.svg" />
             <Card3 Img="/images/card-1.svg" />
