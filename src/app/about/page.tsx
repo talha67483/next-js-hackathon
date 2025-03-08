@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Cards5 } from "@/components";
+import Cards5 from "@/components/Cards/Cards5";
 const page = () => {
   return (
     <section>
