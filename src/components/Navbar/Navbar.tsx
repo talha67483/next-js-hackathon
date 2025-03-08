@@ -5,13 +5,11 @@ import { CiCircleAlert } from "react-icons/ci";
 import Link from "next/link";
 import { useState } from "react";
 import { Poppins } from "next/font/google";
-import { VscLaw } from "react-icons/vsc";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -101,10 +99,6 @@ const Navbar = () => {
           className=" mr-5 lg:hidden inline-block  text-black"
           onClick={clickMenue}
         >
-          {/* <a href="" className=" text-4xl  ">
-            &#8801;
-          </a> */}
-
           <Sheet open={menue} onOpenChange={setMenue}>
             <SheetTrigger>
               {" "}
@@ -123,7 +117,6 @@ const Navbar = () => {
                       <li
                         key={idx}
                         className={`${isActive ? "text-[#007580]" : "text-[#272343]"}`}
-                        // onClick={clickMenue}
                       >
                         <Link href={val.href}>{val.nav}</Link>
                       </li>
@@ -135,30 +128,6 @@ const Navbar = () => {
           </Sheet>
         </div>
       </div>
-      {/* {menue && (
-        <div className=" sm:hidden bg-white text-[#272343] text-[20px] ">
-          <ul
-            className={` ${inter.className} my-5 flex space-x-6 justify-center`}
-          >
-            {navItem.map((val, idx) => {
-              const isActive =
-                pathname === val.href ||
-                (pathname.startsWith(val.href) && val.href !== "/");
-
-              return (
-                <li
-                  key={idx}
-                  className={`${isActive ? "text-[#007580]" : "text-[#272343]"}`}
-                  onClick={clickMenue}
-                >
-                  <Link href={val.href}>{val.nav}</Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      )} */}
-      {/* ---------------------------- */}
 
       <div className=" w-full h-[74px] sm:flex justify-between items-center border-b-[1px] border-[#E1E3E5] hidden    ">
         <ul className=" w-[339px] h-[15px]  text-[14px] font-medium  text-[#636270] flex space-x-7  leading-[15.4px] sm:ml-16 xl:ml-48  ">
@@ -170,7 +139,7 @@ const Navbar = () => {
             return (
               <li
                 key={idx}
-                className={`${isActive ? "text-[#007580]" : "text-[#272343]"}`}
+                className={`${isActive ? "text-[#007580]" : "text-[#272343]"} ${inter.className} `}
               >
                 <Link href={val.href}>{val.nav}</Link>
               </li>
