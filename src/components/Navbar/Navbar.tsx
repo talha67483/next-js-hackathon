@@ -98,7 +98,7 @@ const Navbar = () => {
         </Link>
 
         <div
-          className=" mr-5 md:hidden inline-block  text-black"
+          className=" mr-5 lg:hidden inline-block  text-black"
           onClick={clickMenue}
         >
           {/* <a href="" className=" text-4xl  ">
@@ -172,9 +172,7 @@ const Navbar = () => {
                 key={idx}
                 className={`${isActive ? "text-[#007580]" : "text-[#272343]"}`}
               >
-                <Link href={val.href} onClick={clickMenue}>
-                  {val.nav}
-                </Link>
+                <Link href={val.href}>{val.nav}</Link>
               </li>
             );
           })}
