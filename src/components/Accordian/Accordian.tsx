@@ -1,4 +1,11 @@
 import React from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 interface Faqs {
   qus: string;
   qus1: string;
@@ -25,31 +32,31 @@ const faqs: Faqs[] = [
 
 const Accordian = () => {
   return (
-    <div className=" flex  flex-col sm:flex-row sm:space-x-10 sm:mt-10   ">
+    <div className=" flex  flex-col sm:flex-row sm:space-x-10 sm:mt-10  px-10 sm:px-0     ">
       {faqs.map((val, idx) => (
-        <div className=" space-y-4 sm:space-y-5 bg  mt-5 xl:mt-0  " key={idx}>
-          <div className="  sm:w-[580px] sm:h-[140px] xl:w-[648px] xl:h-[170px]  collapse collapse-plus bg-base-200">
-            <input type="radio" name="my-accordion-3" defaultChecked />
-            <div className="collapse-title text-xl font-medium">{val.qus}</div>
-            <div className="collapse-content">
-              <p> {val.ans} </p>
-            </div>
-          </div>
-          <div className="  sm:w-[580px] sm:h-[140px]  xl:w-[648px] xl:h-[170px]   collapse collapse-plus bg-base-200">
-            <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium">{val.qus1}</div>
-            <div className="collapse-content">
-              <p>{val.ans}</p>
-            </div>
-          </div>
-          <div className=" sm:w-[580px] sm:h-[140px] xl:w-[648px] xl:h-[170px]   collapse collapse-plus bg-base-200">
-            <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium">{val.qus2}</div>
-            <div className="collapse-content">
-              <p>{val.ans}</p>
-            </div>
-          </div>
-        </div>
+        <Accordion type="single" collapsible key={idx}>
+          <AccordionItem value="item1">
+            <AccordionTrigger> {val.qus} </AccordionTrigger>
+            <AccordionContent className="flex flex-col gap-4 text-balance">
+              {" "}
+              <p className=" text-[17px] w-[70%] leading-[22px] ">{val.ans}</p>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item2">
+            <AccordionTrigger> {val.qus1} </AccordionTrigger>
+            <AccordionContent className="flex flex-col gap-4 text-balance">
+              {" "}
+              <p className=" text-[17px] w-[70%] leading-[22px] ">{val.ans}</p>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item3">
+            <AccordionTrigger> {val.qus1} </AccordionTrigger>
+            <AccordionContent className="flex flex-col gap-4 text-balance">
+              {" "}
+              <p className=" text-[17px] w-[70%] leading-[22px] ">{val.ans}</p>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       ))}
     </div>
   );

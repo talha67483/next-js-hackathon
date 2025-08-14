@@ -26,6 +26,15 @@ const navItem: NavType[] = [
   { nav: "Product", href: "/product" },
   { nav: "Pages", href: "/pages" },
   { nav: "About", href: "/about" },
+  { nav: "Contact", href: "/contact" },
+  { nav: "Faqs", href: "/faqs" },
+];
+const navItem2: NavType[] = [
+  { nav: "Home", href: "/" },
+  { nav: "Shop", href: "/shop" },
+  { nav: "Product", href: "/product" },
+  { nav: "Pages", href: "/pages" },
+  { nav: "About", href: "/about" },
 ];
 
 const inter = Poppins({
@@ -131,7 +140,7 @@ const Navbar = () => {
 
       <div className=" w-full h-[74px] sm:flex justify-between items-center border-b-[1px] border-[#E1E3E5] hidden    ">
         <ul className=" w-[339px] h-[15px]  text-[14px] font-medium  text-[#636270] flex space-x-7  leading-[15.4px] sm:ml-16 xl:ml-48  ">
-          {navItem.map((val, idx) => {
+          {navItem2.map((val, idx) => {
             const isActive =
               pathname === val.href ||
               (pathname.startsWith(val.href) && val.href !== "/");

@@ -24,7 +24,7 @@ const Faqs = () => {
         </p>
       </div>
 
-      <div className=" w-full xl:w-[1320px] min-h-[558px] xl:mx-auto sm:mt-20 mt-5   flex xl:space-x-[5px] sm:space-x-7 sm:flex-row flex-col   ">
+      <div className=" w-full  min-h-[558px] xl:mx-auto sm:mt-20 mt-5  justify-center  flex xl:space-x-[5px] sm:space-x-7 sm:flex-row flex-col   ">
         <div></div>
         <div className="  ">
           <Accordian />
